@@ -1,14 +1,22 @@
-const indumentaria = [
-    {producto: "Buzo Berserk", precio: 4500},
-    {producto: "Buzo Gorillaz", precio: 5000},
-    {producto: "Remera Britney", precio: 3000},
-    {producto: "Remera Pibes", precio: 3000}
-]
+class indumentaria {
+    constructor(id, producto, precio) {
+        this.id = id;
+        this.producto = producto;
+        this.precio = precio;
+    }
+}
+
+const productos = []
+
+productos.push (new indumentaria (1, "Buzo Berserk", 4500));
+productos.push (new indumentaria (2, "Buzo Gorillaz", 5000));
+productos.push (new indumentaria (3, "Remera Britney", 3000));
+productos.push (new indumentaria (4, "Remera Pibes", 3000));
 
 const compra= []
 alert("¡Bienvenidos a Mavsoleo Indumentaria! \n Los productos disponibles son:")
 let mensaje= ""
-indumentaria.forEach (item => {
+productos.forEach (item => {
     mensaje += (`${item.producto} ${item.precio} \n`);
     alert(mensaje);
 });
@@ -19,19 +27,19 @@ while(alerta === "S"){
     let opcion= Number(prompt("1- Buzo Berserk \n 2- Buzo Gorillaz \n 3- Remera Britney Spears \n 4- Remera Pibes Chorros"))
     switch (opcion){
         case 1:
-            compra.push(indumentaria[0])
+            compra.push(productos[0])
             break;
         
         case 2:
-            compra.push(indumentaria[1])
+            compra.push(productos[1])
             break;
         
         case 3:
-            compra.push(indumentaria[2])
+            compra.push(productos[2])
             break;
             
         case 4:
-            compra.push(indumentaria[3])
+            compra.push(productos[3])
             break;
 
         default:
