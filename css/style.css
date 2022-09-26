@@ -5,7 +5,7 @@
 /*GRID CONTEINER*/
 .conteiner {
   display: grid;
-  grid-template-areas: "header header header" "main main main" "footer footer footer";
+  grid-template-areas: "header header header" "main main main" "footer footer footer";
   grid-template-columns: 1fr 1.5fr 1fr; }
   @media screen and (max-width: 768px) {
     .conteiner {
@@ -29,41 +29,57 @@
         height: 200px;
         margin-right: 40px; } }
 
-@media screen and (max-width: 525px) {
-  .conteiner .bodyHeaderNav {
-    position: absolute;
-    width: 50%;
-    margin-left: -70%; } }
-
-.conteiner .bodyHeaderNav ul {
+.conteiner .bodyHeaderNav {
   display: flex;
   flex-direction: row;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  background: black;
   justify-content: center;
-  border-radius: 15px;
-  width: 100%; }
+  margin-left: 350px; }
   @media screen and (max-width: 525px) {
-    .conteiner .bodyHeaderNav ul {
-      flex-direction: column; } }
-  .conteiner .bodyHeaderNav ul li a {
-    font-size: 20px;
-    color: white;
-    display: block;
-    text-decoration: none;
-    padding: 10px 15px;
-    font-family: 'Oswald', sans-serif; }
+    .conteiner .bodyHeaderNav {
+      position: absolute;
+      width: 50%;
+      margin-left: -70%; } }
+  .conteiner .bodyHeaderNav div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .conteiner .bodyHeaderNav div .enCarrito {
+      padding: 10px;
+      padding-top: 15px;
+      width: 20%;
+      height: 20px; }
+    .conteiner .bodyHeaderNav div img {
+      width: 10%;
+      padding: 5px; }
+  .conteiner .bodyHeaderNav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: black;
+    justify-content: center;
+    border-radius: 15px;
+    width: 100%; }
     @media screen and (max-width: 525px) {
-      .conteiner .bodyHeaderNav ul li a {
-        box-sizing: border-box;
-        display: block;
-        width: 100%;
-        border-top: 1px solid #333; } }
-    .conteiner .bodyHeaderNav ul li a:hover {
-      background: #3df804;
-      color: #0e0101; }
+      .conteiner .bodyHeaderNav ul {
+        flex-direction: column; } }
+    .conteiner .bodyHeaderNav ul li a {
+      font-size: 20px;
+      color: white;
+      display: block;
+      text-decoration: none;
+      padding: 10px 15px;
+      font-family: "Oswald", sans-serif; }
+      @media screen and (max-width: 525px) {
+        .conteiner .bodyHeaderNav ul li a {
+          box-sizing: border-box;
+          display: block;
+          width: 100%;
+          border-top: 1px solid #333; } }
+      .conteiner .bodyHeaderNav ul li a:hover {
+        background: #3df804;
+        color: #0e0101; }
 
 .conteiner .bodyHeaderMenu label {
   display: none; }

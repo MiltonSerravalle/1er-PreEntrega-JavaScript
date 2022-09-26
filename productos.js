@@ -6,6 +6,9 @@ class indumentaria {
     }
 }
 
+
+
+
 const productos = []
 
 productos.push (new indumentaria (1, "Buzo Berserk", 4500));
@@ -52,3 +55,6 @@ alerta= prompt("Desea seguir comprando? S o N").toUpperCase();
 alert(`Agrego ${compra.length} productos a su carrito`)
 const totalCompra = compra.reduce((acc, item) => acc + item.precio, 0)
 alert(`El precio total de los productos seleccionados es $ ${totalCompra}`)
+
+let carrito = document.getElementById("numeroCarrito")
+carrito.innerHTML = `${compra.length}`
