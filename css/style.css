@@ -353,7 +353,7 @@
     border-radius: 10px;
     width: 350px;
     margin: auto;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
     height: 40px;
     margin-top: 15px; }
     @media screen and (max-width: 598px) {
@@ -382,25 +382,43 @@
       .mainProduct .buzos .buzosProduct .buzosProductItem h3 {
         color: #3df804;
         font-size: 25px;
-        font-family: 'Oswald', sans-serif; }
+        font-family: "Oswald", sans-serif; }
       .mainProduct .buzos .buzosProduct .buzosProductItem h4 {
         color: #3df804;
-        font-family: 'Oswald', sans-serif;
+        font-family: "Oswald", sans-serif;
         font-size: 15px; }
       .mainProduct .buzos .buzosProduct .buzosProductItem .buzosImg:hover {
-        transition: .2s;
+        transition: 0.2s;
         transform: translateY(-5px) scale(1.1);
         box-shadow: 0 5px 5px 0px #000000;
         border: 5px solid #3df804; }
       .mainProduct .buzos .buzosProduct .buzosProductItem .productText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         text-align: center; }
+      .mainProduct .buzos .buzosProduct .buzosProductItem .botonCompra {
+        color: #3df804;
+        text-align: center;
+        font-family: "Oswald", sans-serif;
+        border: 3px solid #3df804;
+        border-radius: 10px;
+        font-size: 18px;
+        width: 100px;
+        margin-top: 5px; }
+        .mainProduct .buzos .buzosProduct .buzosProductItem .botonCompra:hover {
+          background-color: #3df804;
+          color: black;
+          transition: 0.2s;
+          transform: translateY(-2px) scale(1.1); }
   .mainProduct .remeras h1 {
     background: #3df804;
     text-align: center;
     border-radius: 10px;
     width: 350px;
     margin: auto;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
     height: 40px;
     margin-top: 15px; }
     @media screen and (max-width: 598px) {
@@ -429,18 +447,36 @@
       .mainProduct .remeras .remerasProduct .remerasProductItem h3 {
         color: #3df804;
         font-size: 25px;
-        font-family: 'Oswald', sans-serif; }
+        font-family: "Oswald", sans-serif; }
       .mainProduct .remeras .remerasProduct .remerasProductItem h4 {
         color: #3df804;
-        font-family: 'Oswald', sans-serif;
+        font-family: "Oswald", sans-serif;
         font-size: 15px; }
       .mainProduct .remeras .remerasProduct .remerasProductItem .remerasImg:hover {
-        transition: .2s;
+        transition: 0.2s;
         transform: translateY(-5px) scale(1.1);
         box-shadow: 0 5px 5px 0px #000000;
         border: 5px solid #3df804; }
       .mainProduct .remeras .remerasProduct .remerasProductItem .productText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         text-align: center; }
+      .mainProduct .remeras .remerasProduct .remerasProductItem .botonCompra {
+        color: #3df804;
+        text-align: center;
+        font-family: "Oswald", sans-serif;
+        border: 3px solid #3df804;
+        border-radius: 10px;
+        font-size: 18px;
+        width: 100px;
+        margin-top: 5px; }
+        .mainProduct .remeras .remerasProduct .remerasProductItem .botonCompra:hover {
+          background-color: #3df804;
+          color: black;
+          transition: 0.2s;
+          transform: translateY(-2px) scale(1.1); }
 
 /*FOOTER*/
 .bodyFoot {
